@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncdoing=UTF-8&serverTimezone=UTC
+    username: root
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      #ddl-auto: update
+
+  data:
+    rest:
+      base-path: /api
+      default-page-size: 10
+      max-page-size: 10
